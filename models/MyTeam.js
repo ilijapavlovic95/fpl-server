@@ -1,10 +1,12 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-// Define collection and schema for Items
 var MyTeam = new Schema({
     _id: {
         type: Number
+    },
+    code: {
+        type: String
     },
     name: {
         type: String
@@ -32,4 +34,4 @@ var MyTeam = new Schema({
         collection: 'myteam'
     });
 
-module.exports = mongoose.model('MyTeam', MyTeam);
+module.exports = mongoose.model("MyTeam", MyTeam);

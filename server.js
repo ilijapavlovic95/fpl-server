@@ -22,9 +22,9 @@ app.use(bodyParser.json());
 app.use(cors());
 const port = process.env.PORT || 4000;
 
+app.use('/myteam', myteamRoutes);
 app.use('/players', playerRoutes);
 app.use('/teams', teamRoutes);
-app.use('/myteam', myteamRoutes);
 app.use('/fixtures', fixtureRoutes);
 
 const server = app.listen(port, function () {

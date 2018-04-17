@@ -37,4 +37,4 @@ var Player = new Schema({
         collection: 'players'
     });
 
-module.exports = mongoose.model('MyTeam', Player);
+module.exports = mongoose.model('Player', Player);
